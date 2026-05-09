@@ -1,0 +1,54 @@
+{
+  "id": "popup_gaoding_function_promo",
+  "material": "popup",
+  "brand": "gaoding",
+  "source": {
+    "html": "/Users/admin/Desktop/运营推广材料/弹窗规范/稿定-弹窗规范.html",
+    "asset_folder": "/Users/admin/Desktop/运营推广材料/弹窗规范/稿定-弹窗规范",
+    "reference_image": "/Users/admin/Desktop/运营推广材料/弹窗规范/稿定-弹窗规范/20230510-151224-ThleY(1).jpg"
+  },
+  "canvas": {
+    "width": 700,
+    "height": 550,
+    "constraint": "hard"
+  },
+  "layout": {
+    "structure": "top_feature_visual_white_content_card_bottom_cta",
+    "safe_margin": {
+      "x": 66,
+      "y": 50
+    },
+    "top_visual_region": {
+      "x": 110,
+      "y": 50,
+      "width": 480,
+      "height": 150,
+      "usage": "title area plus feature illustration or curated product/result thumbnails"
+    },
+    "content_card_region": {
+      "x": 128,
+      "y": 193,
+      "width": 444,
+      "height": 322,
+      "usage": "benefit bullets and CTA"
+    },
+    "cta_region": {
+      "x": 158,
+      "y": 440,
+      "width": 384,
+      "height": 60,
+      "usage": "single primary CTA"
+    }
+  },
+  "copy": {
+    "required": ["title", "subtitle", "cta"],
+    "optional": ["benefit_points", "badge"],
+    "density": "one main message, up to three short proof points, one action"
+  },
+  "asset_rules": [
+    "Popup is not a small detail page.",
+    "If the detail page has five originals and five results, curate it down to one main proof structure.",
+    "Recommended structures: one input plus three stacked results, one before-after pair, or one compact result collage.",
+    "All final visual design and Chinese layout must be created by image2; local code only verifies size and masks real assets."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "banner_gaoding_function_promo",
+  "material": "banner",
+  "brand": "gaoding",
+  "source": {
+    "html": "/Users/admin/Desktop/运营推广材料/banner规范/稿定-功能推广banner规范.html",
+    "asset_folder": "/Users/admin/Desktop/运营推广材料/banner规范/稿定-功能推广banner规范_files",
+    "reference_image": "/Users/admin/Desktop/运营推广材料/banner规范/稿定-功能推广banner规范_files/20230510-151223-_KdwU(1).jpg"
+  },
+  "canvas": {
+    "width": 1200,
+    "height": 120,
+    "constraint": "hard"
+  },
+  "layout": {
+    "structure": "left_visual_center_copy_right_cta",
+    "safe_margin": {
+      "x": 48,
+      "y": 12
+    },
+    "visual_region": {
+      "x": 48,
+      "y": 8,
+      "width": 180,
+      "height": 104,
+      "usage": "feature illustration or curated product/result thumbnails"
+    },
+    "copy_region": {
+      "x": 260,
+      "y": 18,
+      "width": 640,
+      "height": 84,
+      "usage": "title and one-line supporting copy"
+    },
+    "cta_region": {
+      "x": 940,
+      "y": 30,
+      "width": 200,
+      "height": 58,
+      "usage": "single primary CTA"
+    }
+  },
+  "copy": {
+    "required": ["title", "subtitle", "cta"],
+    "optional": ["badge", "location"],
+    "density": "one title, one supporting sentence, one action"
+  },
+  "asset_rules": [
+    "Do not place a complete detail-page proof chain into the banner.",
+    "Use at most one visual proof structure, such as stacked generated results or one before-after pair.",
+    "All final visual design and Chinese layout must be created by image2; local code only verifies size and masks real assets."
+  ]
+}

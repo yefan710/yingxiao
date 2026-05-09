@@ -1,0 +1,95 @@
+{
+  "canvas_note": "Coordinates use final exported canvas top-left as origin. part1/part2 use 816x1054. part3 uses 816x982.",
+  "slots": [
+    {
+      "image_id": "part1-hero",
+      "canvas": {
+        "width": 816,
+        "height": 1054
+      },
+      "slot": "hero_product_ui",
+      "asset": "screenshots/part1_hero_product_ui.png",
+      "x": 70,
+      "y": 466,
+      "width": 676,
+      "height": 408,
+      "corner_radius": 22,
+      "fit_mode": "cover_crop",
+      "safe_padding": 16,
+      "z_index": 10,
+      "screenshot_request": "微应用默认首页或 agent 对话首页，建议导出宽度 >= 1352px，高度 >= 816px；横向 UI 可保留更多垂直内容，避免上下留白"
+    },
+    {
+      "image_id": "part3-01-agent",
+      "canvas": {
+        "width": 816,
+        "height": 982
+      },
+      "slot": "agent_home",
+      "asset": "screenshots/part3-01_agent_home.png",
+      "x": 72,
+      "y": 430,
+      "width": 672,
+      "height": 270,
+      "corner_radius": 18,
+      "fit_mode": "cover_crop",
+      "safe_padding": 12,
+      "z_index": 10,
+      "screenshot_request": "agent 首页/对话框组件，包含商品主体图、场景参考图、风格、比例，建议截图 >= 1344x624"
+    },
+    {
+      "image_id": "part3-01-agent",
+      "canvas": {
+        "width": 816,
+        "height": 982
+      },
+      "slot": "agent_result",
+      "asset": "screenshots/part3-01_agent_result.png",
+      "x": 142,
+      "y": 724,
+      "width": 532,
+      "height": 154,
+      "corner_radius": 16,
+      "fit_mode": "cover_crop",
+      "safe_padding": 10,
+      "z_index": 12,
+      "screenshot_request": "对话生成结果区，能看到生成图片、引用或继续修改等安全可用操作，建议截图 >= 1064x380"
+    },
+    {
+      "image_id": "part3-02-batch",
+      "canvas": {
+        "width": 816,
+        "height": 982
+      },
+      "slot": "batch_generate",
+      "asset": "screenshots/part3-02_batch_generate.png",
+      "x": 70,
+      "y": 430,
+      "width": 676,
+      "height": 360,
+      "corner_radius": 18,
+      "fit_mode": "cover_crop",
+      "safe_padding": 12,
+      "z_index": 10,
+      "screenshot_request": "选择商品批量设计页，包含商品筛选和素材类型：白底图、透图、场景图、卖点图、搜索推荐图，建议截图 >= 1352x772"
+    },
+    {
+      "image_id": "part3-03-confirm",
+      "canvas": {
+        "width": 816,
+        "height": 982
+      },
+      "slot": "task_detail",
+      "asset": "screenshots/part3-03_task_detail.png",
+      "x": 64,
+      "y": 430,
+      "width": 688,
+      "height": 287,
+      "corner_radius": 18,
+      "fit_mode": "cover_crop",
+      "safe_padding": 12,
+      "z_index": 10,
+      "screenshot_request": "生图详情页，展示成功/失败/跳过/执行中 tab、商品维度 AI 图和失败处理，建议截图 >= 1376x574；不要截入确认发布或回填商品按钮"
+    }
+  ]
+}

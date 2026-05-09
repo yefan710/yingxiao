@@ -1,0 +1,1 @@
+.menu-to-bottom-button{position:absolute;top:-28px;width:100%;height:28px}.menu-to-bottom-button--closed{display:none}.menu-to-bottom-button button{height:28px;color:var(--text-color-tertiary);background-color:#fff;border-width:0;border-radius:0;box-shadow:inset 0 -4px 3px #0000000a}.menu-to-bottom-button button:hover{color:var(--text-color-primary)}

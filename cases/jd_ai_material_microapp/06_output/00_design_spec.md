@@ -1,0 +1,128 @@
+# 00 Design Spec
+
+Spec: 服务市场详情页配图设计规范
+
+## Source
+
+- Source dir: `/Users/admin/Desktop/运营推广材料/服务市场详情页/设计规范`
+- Reference root: `/Users/admin/Desktop/运营推广材料/服务市场详情页`
+- Reference images: `/Users/admin/Desktop/运营推广材料/服务市场详情页/抖店服务市场`
+
+## Design Sources
+
+| Name | Canvas | Format | Palette | HTML |
+| --- | --- | --- | --- | --- |
+| 详情页-功能介绍头图 | 816 x 1054 | PSD | #c3d3e4 / #e3e2db / #e1f6eb / #fafbfc / #2652f6 | /Users/admin/Desktop/运营推广材料/服务市场详情页/设计规范/功能汇总头图.html |
+| 详情页-功能介绍 | 816 x 982 | PSD | #d1d5d6 / #c2d7f6 / #1b44f0 / #142ff0 / #3763f3 | /Users/admin/Desktop/运营推广材料/服务市场详情页/设计规范/功能说明.html |
+| 欢乐逛功能配图-1 | 1500 x 1125 | PSD | #c1d5ed / #8f9498 / #fbfbfb / #e5e8fe / #bee2d6 | /Users/admin/Desktop/运营推广材料/服务市场详情页/设计规范/功能配图设计规范.html |
+
+## Palette
+
+| Token | Hex |
+| --- | --- |
+| function_image_mist_blue | #c1d5ed |
+| function_image_cool_gray | #8f9498 |
+| function_image_near_white | #fbfbfb |
+| function_image_lavender_blue | #e5e8fe |
+| function_image_mint_green | #bee2d6 |
+| summary_header_blue_gray | #c3d3e4 |
+| summary_header_warm_gray | #e3e2db |
+| summary_header_mint | #e1f6eb |
+| summary_header_near_white | #fafbfc |
+| summary_header_primary_blue | #2652f6 |
+| function_explain_gray | #d1d5d6 |
+| function_explain_light_blue | #c2d7f6 |
+| function_explain_primary_blue | #1b44f0 |
+| function_explain_deep_blue | #142ff0 |
+| function_explain_accent_blue | #3763f3 |
+
+## Canvas
+
+| Type | Size |
+| --- | --- |
+| part1 header | 816 x 1054 |
+| part2 summary | 816 x 1054 |
+| part3 function explain | 816 x 982 |
+| legacy function image | 1500 x 1125 |
+| Reference output width | 1632 |
+
+## Page Structure
+
+| Part | Name | Canvas | Purpose | Required Content | Copy Budget |
+| --- | --- | --- | --- | --- | --- |
+| part1 | 头图 | 816 x 1054 | 承接功能上新或核心产品定位，首屏快速说明这次详情页卖什么；通常为功能上新图 | 产品/功能名称 / 一句话价值 / 核心视觉 / 适用场景 | 主标题 10 字内，副标题 20 字内 |
+| part2 | 功能汇总图 | 816 x 1054 | 把本次详情页涉及的功能模块集中展示，帮助用户快速建立全局认知 | 功能分组 / 功能卡片 / 功能短说明 / 统一图标 | 功能名 4-8 字，单卡说明 12 字内 |
+| part3 | 各个功能配图 | 816 x 982 | 逐个解释功能价值、使用场景和界面证据；按功能选择功能配图或功能说明/2图混合层 | 功能标题 / 功能价值 / 真实截图/示意 / 局部标注 / 使用结果或场景 | 主标题 10 字内，标注 6-14 字 |
+
+## Part3 Image Types
+
+| Type | Structure | Description | Best For | Reference Examples |
+| --- | --- | --- | --- | --- |
+| 功能配图 | 文案 + 配图 | 用于单个功能的直接说明。画面通常由标题、短文案和一个主要产品界面/结果截图组成，不额外套大框。 | 后台功能 / 检测工具 / 导出工具 / 监控工具 / 批量操作 | 质量分优化 / 全店商品导出 / SKU低价检测 / 云商品库 / 批量修改 / 违规监控 / 重复铺货检测 |
+| 功能说明 | 文案 + 配图 + 框 | 用于需要展示多个素材层、前后对比、模板组合或 AI 生成效果的功能。画面由标题说明、多个素材/截图组合、外层白色卡片或蓝色描边框构成。 | AI生成 / 素材组合 / 海报详情页 / 主图视频 / 图文带货 / 商品设计 | AI商品裂变 / AI工具 / 海报&详情页 / 主图视频 / 促销水印-AI / 图文带货-AI / AI电商设计 / 稿定商品 |
+
+## Copy Rules
+
+| Part / Type | Rules |
+| --- | --- |
+| part1_header | source_observation: 参考《抖音最新头图.jpg》：顶部短品牌标签、大号产品/功能名、一句话价值、下方功能卡片矩阵。<br>producer_pill: 4-6 个中文字符，可选，例如“欢乐逛出品”<br>main_title: 4-8 个中文字符优先，最长 12 个中文字符；必须短、重、可一眼识别产品或功能<br>subtitle: 12-22 个中文字符优先，最长 26 个中文字符；尽量一行展示完整<br>section_headline: 12-18 个中文字符优先，最长 22 个中文字符；用于功能总览标题<br>module_card_title: 3-6 个中文字符优先，最长 8 个中文字符<br>module_tag: 4-7 个中文字符优先，最长 8 个中文字符 |
+| part2_summary | source_observation: 参考《1422.png》：最新上线/版本能力类大标题，配 3 条能力短句和一组短标签。<br>section_label: 4-6 个中文字符，例如“最新上线”<br>main_title: 8-14 个中文字符优先，最长 18 个中文字符；数字、版本名可保留<br>bullet_label: 4-6 个中文字符，例如“上货额度高”“发品不卡顿”<br>bullet_body: 18-32 个中文字符优先，最长 36 个中文字符；一条只说一个能力或结果<br>callout_tag: 4-7 个中文字符优先，最长 8 个中文字符；可带 # |
+| part3_function_image | source_observation: 参考《3-体验分优化.jpeg》《5-全店商品导出.png》《sku低价检测.png》《违规监控.png》：大蓝标题 + 2-3 条蓝点能力文案 + 单个真实后台截图/局部放大。<br>title: 4-7 个中文字符优先，最长 9 个中文字符<br>bullets: 2 条优先，最多 3 条；每条 24-36 个中文字符优先，最长 42 个中文字符<br>bullet_label: 4-8 个中文字符，加粗黑色，后接竖线或逗号<br>emphasis_phrase: 4-10 个中文字符，加粗黑色，用于句尾关键收益或操作<br>annotation: 4-8 个中文字符优先，最长 10 个中文字符 |
+| part3_function_explain_2_image_mix | source_observation: 参考《1-AI裂变.png》《image.png》：大标题 + 短副标题/功能块标题 + 多图组合 + 外层白色卡片或蓝色描边框。<br>title: 4-8 个中文字符优先，最长 10 个中文字符<br>subtitle: 10-20 个中文字符优先，最长 24 个中文字符<br>block_title: 4-8 个中文字符，例如“主图裂变”“边框+利益点”<br>check_item: 6-14 个中文字符优先，最长 16 个中文字符<br>side_benefit_tag: 4-8 个中文字符优先，最长 10 个中文字符<br>image_label: 4-7 个中文字符优先，最长 8 个中文字符 |
+
+## Font Size Rules
+
+| Part / Type | Reference Sizes |
+| --- | --- |
+| unit_note | 以下为 1632px 宽参考图的视觉字号估算；816px 宽 PSD/画布按 0.5 倍等比缩放，最终以不溢出和层级清晰为准。 |
+| part1_header | producer_pill: 24-32px @1632<br>main_title: 96-140px @1632，特粗<br>subtitle: 44-56px @1632，中粗<br>section_headline: 48-64px @1632，粗体<br>module_card_title: 42-56px @1632，粗体<br>module_tag: 28-34px @1632，中粗 |
+| part2_summary | section_label: 54-72px @1632，粗体<br>main_title: 78-110px @1632，特粗<br>bullet: 34-44px @1632，正文灰 + 关键词黑体<br>callout_tag: 36-52px @1632，中粗 |
+| part3_function_image | title: 82-110px @1632，蓝色特粗<br>bullet: 38-48px @1632，正文灰 + 关键词黑体<br>annotation: 30-42px @1632，白字或绿色/蓝色胶囊标签<br>screenshot_ui: 真实截图文字必须可辨认，局部放大框优先保留原 UI 字号 |
+| part3_function_explain_2_image_mix | title: 70-110px @1632，蓝色或白色特粗<br>subtitle: 32-44px @1632<br>block_title: 36-52px @1632，白字蓝底或橙底<br>check_item: 30-40px @1632<br>side_benefit_tag: 30-40px @1632，浅黄胶囊或蓝色短标签 |
+
+## Copy Style Rules
+
+- 功能名短，优先使用名词化或动词化表达，例如“SKU低价检测”“违规监控”“全店商品导出”。
+- 文案直接说能力、范围和效率，不写空泛品牌口号。
+- 高频词可以使用：支持、一键、批量、自动、快速、灵活、精准、全店、多店、智能检测。
+- 功能配图的 bullet 推荐结构：能力短语｜范围/操作/结果，例如“一键智能检测｜根据 SKU 名称/最低价/最高价自定义判断”。
+- 功能说明/2图混合层的标签必须短，适合贴在图片旁边或外框内部，不写长段落。
+- 效果、增长、转化、收益类表达必须有截图、产品事实或运营数据来源；缺来源标 NEEDS_SOURCE。
+- 可强调效率和避免风险，但不能写无法证明的绝对化承诺。
+
+## Screenshot Composite Rules
+
+| Rule | Value |
+| --- | --- |
+| principle | 功能配图和功能说明中的产品界面必须使用真实截图或真实设计稿贴入，禁止纯 AI 生图重绘后台界面。 |
+| image2_stage | image2 生成完整视觉和中文文案排版，包括背景、标题、bullet、功能卡片、图标、装饰、截图容器和整体留白；截图槽内不生成真实 UI 内容。 |
+| mask_coordinates | 每个截图槽必须输出 x、y、width、height、corner_radius、fit_mode、safe_padding、z_index；坐标以最终导出画布左上角为原点，单位 px。 |
+| screenshot_request | 运营按 mask 尺寸提供截图，建议实际截图宽高至少为 mask 的 1.5-2 倍，避免贴入后模糊；如果需要局部放大，单独提供 zoom screenshot。 |
+| fit_modes | cover_crop / contain_pad / native_scale |
+| function_image_slots | 功能配图通常 1 个 main_screenshot 槽，可加 1 个 zoom_detail 槽；不要让 AI 生成槽内 UI。 |
+| function_explain_slots | 功能说明/2图混合层可以有 2-6 个 image slots，每个槽都必须标明素材来源、用途和是否允许裁切。 |
+| composite_stage | 收到截图后，只做裁切、缩放、圆角遮罩、阴影、描边和必要脱敏，不改写截图内容，不重排文案，不重画卡片。 |
+| privacy | 截图中如有真实店铺名、订单号、手机号、客户信息、金额等敏感信息，先脱敏再贴图。 |
+| blocking_rule | 没有真实截图或设计稿时，最终稿只能停留在 image2 base，不能进入发布稿。 |
+
+## Visual Rules
+
+- 整体为浅色服务市场功能说明风，不能做成红黄大促海报
+- part1 头图和 part2 功能汇总图优先参考《详情页-功能介绍头图》规范，使用 #c3d3e4、#e3e2db、#e1f6eb、#fafbfc、#2652f6
+- part3 各功能配图优先参考《详情页-功能介绍》规范，使用 #d1d5d6、#c2d7f6、#1b44f0、#142ff0、#3763f3
+- part3 需要先判断版型：功能配图 = 文案 + 配图；功能说明/2图混合层 = 文案 + 配图 + 框
+- 功能配图适合后台工具类功能，以单个主要界面截图为视觉主体，不额外套大框
+- 功能说明/2图混合层适合 AI、素材组合、模板效果、前后对比类功能，必须有外层白色卡片或蓝色描边框承载多图混合
+- 旧版欢乐逛功能配图或需要兼容 1500 x 1125 时，使用 #c1d5ed、#8f9498、#fbfbfb、#e5e8fe、#bee2d6
+- 功能卡片、截图框、标注框保持统一圆角、统一阴影、统一图标风格
+- 必须保留足够留白，避免一张图塞太多功能说明
+- 真实后台截图必须可读，不能用 AI 生成假数据、假界面、假客户案例
+
+## Negative Rules
+
+- 不要使用深色背景
+- 不要使用红黄大促风
+- 不要生成不存在的后台数据
+- 不要混用写实图标、线性图标、3D 图标
+- 不要让标题、副标题、功能卡片文字溢出
+- 不要脱离指定色板

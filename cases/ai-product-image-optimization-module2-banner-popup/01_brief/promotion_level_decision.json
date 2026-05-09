@@ -1,0 +1,16 @@
+{
+  "request_id": "ai-product-image-optimization-module2-banner-popup",
+  "promotion_level": "L2",
+  "reason": "这是 AI 商品图优化功能的站内曝光补充物料，需要说明功能位置和核心能力，但 banner / 弹窗不承载完整详情页证明链。",
+  "materials": [
+    "banner_1200x120",
+    "popup_700x550"
+  ],
+  "evidence_required": [
+    "功能位置：多店铺管理 - AI 商品图",
+    "原图/效果图素材",
+    "不支持能力清单"
+  ],
+  "image2_required": true,
+  "wireframe_required_before_image2": true
+}

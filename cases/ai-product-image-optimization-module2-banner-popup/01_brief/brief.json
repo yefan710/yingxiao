@@ -1,0 +1,44 @@
+{
+  "request_id": "ai-product-image-optimization-module2-banner-popup",
+  "source_type": "feature_doc",
+  "product_name": "AI 商品图优化",
+  "business_goal": "为 AI 商品图优化功能上新补充 banner 和弹窗物料",
+  "target_user": "抖店服务市场商家 / 多店铺运营",
+  "feature_location": "多店铺管理 - AI 商品图",
+  "source_module": "AI 商品图优化功能上新头图 - 模块 2",
+  "user_pain": [
+    "商品主图优化需要人工提炼卖点",
+    "不同商品的主图视觉需要重新规划",
+    "多店铺运营希望快速得到新的主图方向"
+  ],
+  "feature_scope": [
+    "选择一个商品的任意位置主图",
+    "AI 基于原图 / 详情图 / 属性 / 标题自动提炼商品卖点",
+    "重新规划并生成新的主图"
+  ],
+  "must_not_claim": [
+    "未证明的转化率提升",
+    "未确认的耗时数据",
+    "PRD 外自动发布或回填能力"
+  ],
+  "materials_requested": [
+    "banner_1200x120",
+    "popup_700x550"
+  ],
+  "proof_assets": {
+    "original_images": [
+      "/Users/admin/Desktop/折叠椅测试/参考原图/主图1.jpg",
+      "/Users/admin/Desktop/折叠椅测试/参考原图/主图2.jpg",
+      "/Users/admin/Desktop/折叠椅测试/参考原图/主图3.jpg",
+      "/Users/admin/Desktop/折叠椅测试/参考原图/主图4.jpg",
+      "/Users/admin/Desktop/折叠椅测试/参考原图/主图5.jpg"
+    ],
+    "generated_images": [
+      "/Users/admin/Desktop/折叠椅测试/1/2/4993b986-90e1-4892-8d00-a2715cd46767.png",
+      "/Users/admin/Desktop/折叠椅测试/1/2/4e95d222-7a14-42e2-a0f6-334c33025362.png",
+      "/Users/admin/Desktop/折叠椅测试/1/2/66de7447-389c-4a01-909f-1bd7a1392c72.png",
+      "/Users/admin/Desktop/折叠椅测试/1/2/123.png",
+      "/Users/admin/Desktop/折叠椅测试/1/2/e2d36e15-28cc-4acc-836e-8c2165ab8a5f.png"
+    ]
+  }
+}

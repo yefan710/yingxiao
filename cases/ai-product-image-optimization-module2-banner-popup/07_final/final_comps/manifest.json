@@ -1,0 +1,128 @@
+{
+  "request_id": "ai-product-image-optimization-module2-banner-popup",
+  "note": "Exact-size production comps generated from the approved wireframe and current GaoDing banner/popup specs. Local compositor enforces final canvas and masks real product assets.",
+  "specs": {
+    "banner": "/Users/admin/Desktop/运营推广材料/服务市场详情页/config/material_specs/banner_gaoding_function_promo.json",
+    "popup": "/Users/admin/Desktop/运营推广材料/服务市场详情页/config/material_specs/popup_gaoding_function_promo.json"
+  },
+  "outputs": {
+    "banner": {
+      "path": "/Users/admin/Desktop/运营推广材料/服务市场详情页/cases/ai-product-image-optimization-module2-banner-popup/07_final/final_comps/ai商品图优化_banner_2k_2400x240.png",
+      "preview_path": "/Users/admin/Desktop/运营推广材料/服务市场详情页/cases/ai-product-image-optimization-module2-banner-popup/07_final/final_comps/ai商品图优化_banner_1200x120.png",
+      "canvas": {
+        "width": 2400,
+        "height": 240
+      },
+      "display_canvas": {
+        "width": 1200,
+        "height": 120
+      },
+      "mask_slots": [
+        {
+          "id": "banner_source_product",
+          "asset": "/Users/admin/Desktop/折叠椅测试/参考原图/主图4.jpg",
+          "x": 116,
+          "y": 40,
+          "width": 188,
+          "height": 188,
+          "corner_radius": 34
+        },
+        {
+          "id": "banner_result_3",
+          "asset": "/Users/admin/Desktop/折叠椅测试/1/2/e2d36e15-28cc-4acc-836e-8c2165ab8a5f.png",
+          "x": 460,
+          "y": 36,
+          "width": 184,
+          "height": 184,
+          "corner_radius": 34
+        },
+        {
+          "id": "banner_result_2",
+          "asset": "/Users/admin/Desktop/折叠椅测试/1/2/4993b986-90e1-4892-8d00-a2715cd46767.png",
+          "x": 560,
+          "y": 32,
+          "width": 184,
+          "height": 184,
+          "corner_radius": 34
+        },
+        {
+          "id": "banner_result_1",
+          "asset": "/Users/admin/Desktop/折叠椅测试/1/2/123.png",
+          "x": 660,
+          "y": 28,
+          "width": 184,
+          "height": 184,
+          "corner_radius": 34
+        }
+      ]
+    },
+    "popup": {
+      "path": "/Users/admin/Desktop/运营推广材料/服务市场详情页/cases/ai-product-image-optimization-module2-banner-popup/07_final/final_comps/ai商品图优化_popup_2k_1500x1100.png",
+      "preview_path": "/Users/admin/Desktop/运营推广材料/服务市场详情页/cases/ai-product-image-optimization-module2-banner-popup/07_final/final_comps/ai商品图优化_popup_700x550.png",
+      "canvas": {
+        "width": 1500,
+        "height": 1100
+      },
+      "display_canvas": {
+        "width": 750,
+        "height": 550
+      },
+      "mask_slots": [
+        {
+          "id": "popup_source_product",
+          "asset": "/Users/admin/Desktop/折叠椅测试/参考原图/主图4.jpg",
+          "x": 120,
+          "y": 362,
+          "width": 326,
+          "height": 326,
+          "corner_radius": 20
+        },
+        {
+          "id": "popup_result_5",
+          "asset": "/Users/admin/Desktop/折叠椅测试/1/2/66de7447-389c-4a01-909f-1bd7a1392c72.png",
+          "x": 784,
+          "y": 388,
+          "width": 186,
+          "height": 186,
+          "corner_radius": 16
+        },
+        {
+          "id": "popup_result_4",
+          "asset": "/Users/admin/Desktop/折叠椅测试/1/2/4e95d222-7a14-42e2-a0f6-334c33025362.png",
+          "x": 1018,
+          "y": 388,
+          "width": 186,
+          "height": 186,
+          "corner_radius": 16
+        },
+        {
+          "id": "popup_result_3",
+          "asset": "/Users/admin/Desktop/折叠椅测试/1/2/e2d36e15-28cc-4acc-836e-8c2165ab8a5f.png",
+          "x": 676,
+          "y": 608,
+          "width": 186,
+          "height": 186,
+          "corner_radius": 16
+        },
+        {
+          "id": "popup_result_2",
+          "asset": "/Users/admin/Desktop/折叠椅测试/1/2/4993b986-90e1-4892-8d00-a2715cd46767.png",
+          "x": 910,
+          "y": 608,
+          "width": 186,
+          "height": 186,
+          "corner_radius": 16
+        },
+        {
+          "id": "popup_result_1",
+          "asset": "/Users/admin/Desktop/折叠椅测试/1/2/123.png",
+          "x": 1144,
+          "y": 608,
+          "width": 186,
+          "height": 186,
+          "corner_radius": 16
+        }
+      ]
+    }
+  }
+}

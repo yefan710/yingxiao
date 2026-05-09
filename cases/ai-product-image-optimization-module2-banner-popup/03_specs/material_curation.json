@@ -1,0 +1,74 @@
+{
+  "request_id": "ai-product-image-optimization-module2-banner-popup",
+  "source_materials": {
+    "original_images": 5,
+    "generated_images": 5,
+    "screenshots": 0
+  },
+  "curation": [
+    {
+      "material": "banner_1200x120",
+      "selected_strategy": "single_product_three_positions_to_three_results",
+      "selected_assets": [
+        {
+          "slot": "source_product",
+          "source": "/Users/admin/Desktop/折叠椅测试/参考原图/主图4.jpg",
+          "reason": "作为同一个原商品输入，配合 3 个位置标记，避免用户误解为随便生成 3 张无关图片。"
+        },
+        {
+          "slot": "result_1",
+          "source": "/Users/admin/Desktop/折叠椅测试/1/2/123.png",
+          "reason": "最适合作为前景效果图，信息强、主体清晰。"
+        },
+        {
+          "slot": "result_2",
+          "source": "/Users/admin/Desktop/折叠椅测试/1/2/4993b986-90e1-4892-8d00-a2715cd46767.png",
+          "reason": "表达另一个主图方向，适合做叠放背景。"
+        },
+        {
+          "slot": "result_3",
+          "source": "/Users/admin/Desktop/折叠椅测试/1/2/e2d36e15-28cc-4acc-836e-8c2165ab8a5f.png",
+          "reason": "表达第三种主图方向，补足多套效果图感知。"
+        }
+      ],
+      "dropped_assets": [
+        {
+          "source": "5 张原图 + 其余效果图",
+          "reason": "1200x120 不展示完整对比链路，只展示多张效果图叠放来表达批量生成。"
+        }
+      ]
+    },
+    {
+      "material": "popup_700x550",
+      "selected_strategy": "multi_input_to_stacked_results",
+      "selected_assets": [
+        {
+          "slot": "input_1",
+          "source": "/Users/admin/Desktop/折叠椅测试/参考原图/主图4.jpg",
+          "reason": "作为多个位置主图输入之一，主体清晰。"
+        },
+        {
+          "slot": "result_1",
+          "source": "/Users/admin/Desktop/折叠椅测试/1/2/123.png",
+          "reason": "效果差异明显，适合做前景效果图。"
+        },
+        {
+          "slot": "result_2",
+          "source": "/Users/admin/Desktop/折叠椅测试/1/2/4993b986-90e1-4892-8d00-a2715cd46767.png",
+          "reason": "表达另一套主图方向。"
+        },
+        {
+          "slot": "result_3",
+          "source": "/Users/admin/Desktop/折叠椅测试/1/2/e2d36e15-28cc-4acc-836e-8c2165ab8a5f.png",
+          "reason": "表达第三套主图方向。"
+        }
+      ],
+      "dropped_assets": [
+        {
+          "source": "其余原图/效果图",
+          "reason": "弹窗用 1 张输入图 + 3 张叠放效果图表达多套生成，不放完整 5 组对比。"
+        }
+      ]
+    }
+  ]
+}

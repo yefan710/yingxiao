@@ -1,0 +1,30 @@
+{
+  "canvas": {
+    "width": 816,
+    "height": 982
+  },
+  "slots": [
+    {
+      "slot": "main_screenshot",
+      "asset": "screenshots/part3-01_main_screenshot.png",
+      "x": 72,
+      "y": 390,
+      "width": 672,
+      "height": 390,
+      "corner_radius": 18,
+      "fit_mode": "cover_crop",
+      "safe_padding": 12,
+      "z_index": 10,
+      "shadow": {
+        "blur": 18,
+        "offset_x": 0,
+        "offset_y": 8,
+        "alpha": 36
+      },
+      "stroke": {
+        "color": "#1b44f0",
+        "width": 2
+      }
+    }
+  ]
+}
