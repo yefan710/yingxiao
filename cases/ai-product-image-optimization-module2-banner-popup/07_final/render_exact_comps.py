@@ -128,6 +128,18 @@ def close_button(draw: ImageDraw.ImageDraw, x: int, y: int, size: int) -> None:
     draw.line((x + size - pad, y + pad, x + pad, y + size - pad), fill=(133, 151, 181), width=5)
 
 
+def clip_to_popup_frame(img: Image.Image, frame: tuple[int, int, int, int], radius: int) -> Image.Image:
+    scale = 4
+    mask = Image.new("L", (img.width * scale, img.height * scale), 0)
+    md = ImageDraw.Draw(mask)
+    scaled_frame = tuple(v * scale for v in frame)
+    md.rounded_rectangle(scaled_frame, radius=radius * scale, fill=255)
+    mask = mask.resize(img.size, Image.Resampling.LANCZOS)
+    clipped = img.copy()
+    clipped.putalpha(mask)
+    return clipped
+
+
 def render_banner() -> dict:
     img = bg((2400, 240))
     d = ImageDraw.Draw(img)
@@ -248,10 +260,12 @@ def render_popup() -> dict:
     d.text((x0, 1029), left, font=f_plain, fill=(82, 94, 112))
     d.text((x0 + tw_left, 1025), highlight, font=f_highlight, fill=BLUE)
 
+    img = clip_to_popup_frame(img, (26, 24, 1474, 1076), 14)
+
     out = OUT / "ai商品图优化_popup_700x550.png"
-    img.convert("RGB").resize((750, 550), Image.Resampling.LANCZOS).save(out, quality=96)
+    img.resize((750, 550), Image.Resampling.LANCZOS).save(out)
     out_2x = OUT / "ai商品图优化_popup_2k_1500x1100.png"
-    img.convert("RGB").save(out_2x, quality=96)
+    img.save(out_2x)
     return {"path": str(out_2x), "preview_path": str(out), "canvas": {"width": 1500, "height": 1100}, "display_canvas": {"width": 750, "height": 550}, "mask_slots": slots}
 
 
