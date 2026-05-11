@@ -121,6 +121,13 @@ def ai_icon(draw: ImageDraw.ImageDraw, x: int, y: int, size: int) -> None:
     draw_center(draw, (x + 6, y + 5, size - 12, size - 10), "AI", font(round(size * 0.34)), WHITE)
 
 
+def close_button(draw: ImageDraw.ImageDraw, x: int, y: int, size: int) -> None:
+    draw.ellipse((x, y, x + size, y + size), fill=(255, 255, 255, 235), outline=(218, 230, 252), width=2)
+    pad = round(size * 0.32)
+    draw.line((x + pad, y + pad, x + size - pad, y + size - pad), fill=(133, 151, 181), width=5)
+    draw.line((x + size - pad, y + pad, x + pad, y + size - pad), fill=(133, 151, 181), width=5)
+
+
 def render_banner() -> dict:
     img = bg((2400, 240))
     d = ImageDraw.Draw(img)
@@ -172,6 +179,7 @@ def render_popup() -> dict:
         d.line((0, y, W, y), fill=(r, g, b, 255))
     d.rounded_rectangle((26, 24, 1474, 1076), radius=14, outline=(220, 232, 255), width=2)
     d.polygon([(980, 24), (1474, 24), (1474, 360), (1240, 306)], fill=(228, 240, 255, 160))
+    close_button(d, 1394, 50, 56)
 
     draw_art_text(d, (122, 68), "AI 商品图优化接入", font(76), TEXT, stroke_width=7, shadow_fill=(196, 218, 255))
     draw_art_text(d, (126, 164), "一个商品多位置素材", font(48), TEXT, stroke_width=5, shadow_fill=(214, 229, 255))
