@@ -236,7 +236,7 @@ def render_popup() -> dict:
     d.rounded_rectangle((210, 904, 1290, 1006), radius=51, fill=BLUE)
     draw_center(d, (210, 904, 1080, 102), "立即体验", font(48), WHITE)
     left = "新用户可免费使用 "
-    highlight = "5 张图"
+    highlight = "8 张图"
     f_plain = font(28)
     f_highlight = font(34)
     tw_left, _ = text_size(d, left, f_plain)
