@@ -12,10 +12,11 @@ OUT.mkdir(parents=True, exist_ok=True)
 FONT_MEDIUM = "/System/Library/Fonts/Hiragino Sans GB.ttc"
 FONT_LIGHT = "/System/Library/Fonts/Hiragino Sans GB.ttc"
 
-BLUE = (26, 94, 246)
-BLUE_DARK = (17, 54, 210)
-TEXT = (20, 32, 54)
-MUTED = (88, 103, 126)
+BLUE = (34, 84, 244)
+BLUE_DARK = (19, 56, 207)
+TEXT = (34, 37, 41)
+MUTED = (76, 83, 92)
+TERTIARY = (127, 135, 146)
 BG = (238, 246, 255)
 LINE = (188, 210, 242)
 WHITE = (255, 255, 255)
@@ -61,9 +62,9 @@ def draw_center(draw: ImageDraw.ImageDraw, xy, text: str, fnt, fill) -> None:
     draw.text((x + (w - tw) / 2, y + (h - th) / 2 - 2), text, font=fnt, fill=fill)
 
 
-def draw_art_text(draw: ImageDraw.ImageDraw, xy, text: str, fnt, fill, stroke=(255, 255, 255), stroke_width=4, shadow_fill=(190, 210, 245)) -> None:
+def draw_art_text(draw: ImageDraw.ImageDraw, xy, text: str, fnt, fill, stroke=(255, 255, 255), stroke_width=3, shadow_fill=(205, 222, 255)) -> None:
     x, y = xy
-    draw.text((x + 4, y + 5), text, font=fnt, fill=shadow_fill)
+    draw.text((x + 3, y + 4), text, font=fnt, fill=shadow_fill)
     draw.text((x, y), text, font=fnt, fill=fill, stroke_width=stroke_width, stroke_fill=stroke)
 
 
@@ -167,8 +168,8 @@ def render_banner() -> dict:
         slots.append({"id": f"banner_{key}", "asset": ASSETS[key], "x": s(x), "y": s(y), "width": s(92), "height": s(92), "corner_radius": s(17)})
 
     d = ImageDraw.Draw(img)
-    d.text((s(438), s(21)), "AI 商品图优化功能上线", font=font(s(33)), fill=TEXT)
-    d.text((s(440), s(67)), "提取主图/详情图/标题/属性卖点，AI 重新规划生成视觉", font=font(s(17)), fill=(42, 55, 78))
+    d.text((s(438), s(21)), "AI 商品图优化功能上线", font=font(s(34)), fill=TEXT)
+    d.text((s(440), s(68)), "提取主图/详情图/标题/属性卖点，AI 重新规划生成视觉", font=font(s(18), False), fill=MUTED)
     round_rect(d, sxy(1012, 31, 1150, 89), s(18), BLUE)
     draw_center(d, (s(1012), s(31), s(138), s(58)), "立即体验", font(s(23)), WHITE)
 
@@ -193,13 +194,13 @@ def render_popup() -> dict:
     d.polygon([(980, 24), (1474, 24), (1474, 360), (1240, 306)], fill=(228, 240, 255, 160))
     close_button(d, 1394, 50, 56)
 
-    draw_art_text(d, (122, 68), "AI 商品图优化接入", font(76), TEXT, stroke_width=7, shadow_fill=(196, 218, 255))
-    draw_art_text(d, (126, 164), "一个商品多位置素材", font(48), TEXT, stroke_width=5, shadow_fill=(214, 229, 255))
-    draw_art_text(d, (620, 164), "批量生成 5 张主图", font(48), BLUE, stroke_width=5, shadow_fill=(214, 229, 255))
+    draw_art_text(d, (122, 68), "AI 商品图优化接入", font(78), TEXT, stroke_width=5, shadow_fill=(207, 224, 255))
+    draw_art_text(d, (126, 164), "一个商品多位置素材", font(54), TEXT, stroke_width=3, shadow_fill=(224, 234, 255))
+    draw_art_text(d, (650, 164), "批量生成 5 张主图", font(54), BLUE, stroke_width=3, shadow_fill=(224, 234, 255))
 
     slots = []
     d.rounded_rectangle((124, 250, 446, 308), radius=29, fill=(238, 246, 255), outline=(194, 219, 255), width=2)
-    d.text((162, 264), "选择 5 张主图位置", font=font(25), fill=BLUE_DARK)
+    d.text((150, 260), "选择 5 张主图位置", font=font(34), fill=BLUE_DARK)
     shadow(img, (88, 330, 478, 888), 30, 28)
     d = ImageDraw.Draw(img)
     d.rounded_rectangle((88, 330, 478, 888), radius=30, fill=WHITE, outline=(232, 239, 248), width=2)
@@ -214,15 +215,15 @@ def render_popup() -> dict:
 
     d = ImageDraw.Draw(img)
     d.rounded_rectangle((116, 724, 450, 846), radius=22, fill=(245, 250, 255), outline=(210, 229, 255), width=2)
-    draw_art_text(d, (142, 746), "提取", font(34), BLUE, stroke_width=3)
-    d.text((232, 748), "主图 / 详情页", font=font(20), fill=(49, 62, 83))
-    d.text((232, 782), "标题 / 属性里的卖点", font=font(20), fill=(49, 62, 83))
+    draw_art_text(d, (142, 742), "提取", font(42), BLUE, stroke_width=2)
+    d.text((246, 750), "主图 / 详情页", font=font(30, False), fill=MUTED)
+    d.text((246, 790), "标题 / 属性卖点", font=font(30, False), fill=MUTED)
 
     d.line((506, 610, 580, 610), fill=BLUE, width=9)
     d.polygon([(580, 610), (550, 590), (550, 630)], fill=BLUE)
 
     d.rounded_rectangle((720, 250, 1068, 308), radius=29, fill=(238, 246, 255), outline=(194, 219, 255), width=2)
-    d.text((792, 264), "AI 优化结果", font=font(25), fill=BLUE_DARK)
+    d.text((788, 260), "AI 优化结果", font=font(34), fill=BLUE_DARK)
     shadow(img, (610, 330, 1422, 888), 30, 28)
     d = ImageDraw.Draw(img)
     d.rounded_rectangle((610, 330, 1422, 888), radius=30, fill=WHITE, outline=(232, 239, 248), width=2)
@@ -241,24 +242,24 @@ def render_popup() -> dict:
 
     d = ImageDraw.Draw(img)
     d.rounded_rectangle((785, 814, 1248, 862), radius=24, fill=(238, 246, 255))
-    d.text((850, 826), "5 张 1:1 主图优化结果", font=font(22), fill=BLUE_DARK)
+    d.text((830, 821), "5 张 1:1 主图优化结果", font=font(32), fill=BLUE_DARK)
 
     shadow(img, (210, 912, 1290, 1014), 52, 32)
     d = ImageDraw.Draw(img)
     d.rounded_rectangle((210, 904, 1290, 1006), radius=51, fill=BLUE)
-    draw_center(d, (210, 904, 1080, 102), "立即体验", font(48), WHITE)
+    draw_center(d, (210, 904, 1080, 102), "立即体验", font(54), WHITE)
     left = "新用户可免费使用 "
     highlight = "8 张图"
-    f_plain = font(28)
-    f_highlight = font(34)
+    f_plain = font(32, False)
+    f_highlight = font(38)
     tw_left, _ = text_size(d, left, f_plain)
     tw_highlight, _ = text_size(d, highlight, f_highlight)
     pill_w = tw_left + tw_highlight + 92
     pill_x = (W - pill_w) // 2
     d.rounded_rectangle((pill_x, 1020, pill_x + pill_w, 1070), radius=25, fill=(245, 250, 255), outline=(204, 224, 255), width=2)
     x0 = pill_x + 46
-    d.text((x0, 1029), left, font=f_plain, fill=(82, 94, 112))
-    d.text((x0 + tw_left, 1025), highlight, font=f_highlight, fill=BLUE)
+    d.text((x0, 1027), left, font=f_plain, fill=MUTED)
+    d.text((x0 + tw_left, 1022), highlight, font=f_highlight, fill=BLUE)
 
     img = clip_to_popup_frame(img, (26, 24, 1474, 1076), 14)
 
