@@ -87,12 +87,26 @@ banner 要信息快速、视觉集中。不要加入突兀的分类标签框；C
 - 视觉不是单一色块堆叠，整体有完成度。
 - 使用真实截图时，截图和背景融合自然。
 
+## 字体规范
+
+生成 banner / 弹窗时参考 `docs/BANNER_POPUP_TYPOGRAPHY.md`。
+
+硬性优先级：
+
+- 字体：优先 `"PingFang SC"`，不可用时用 `"Hiragino Sans GB"` 或 `STHeiti`。
+- 主蓝：`#2254F4`。
+- 主标题：`#222529`，字重 `600`。
+- 正文：`#4C535C` 或 `#7F8792`，字重 `400`。
+- Banner 主标题按 `32-34px` 显示尺寸；副标题按 `16-18px`。
+- 弹窗主标题按 `34-40px` 显示尺寸；副标题按 `24-28px`；功能点正文按 `13-16px`。
+- 2x 图按显示字号乘 2 生成。
+
 ## 参考路径
 
 - `references/banner规范/`
 - `references/弹窗规范/`
 - `references/详情页规范/`
+- `docs/BANNER_POPUP_TYPOGRAPHY.md`
 - `cases/jd_ai_material_microapp/`
 - `cases/ai-product-image-optimization-module2-banner-popup/`
 - `config/promo-materials/material_specs/`
-
