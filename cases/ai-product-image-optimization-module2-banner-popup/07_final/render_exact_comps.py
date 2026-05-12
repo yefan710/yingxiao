@@ -68,6 +68,13 @@ def draw_art_text(draw: ImageDraw.ImageDraw, xy, text: str, fnt, fill, stroke=(2
     draw.text((x, y), text, font=fnt, fill=fill, stroke_width=stroke_width, stroke_fill=stroke)
 
 
+def draw_heavy_text(draw: ImageDraw.ImageDraw, xy, text: str, fnt, fill, shadow_fill=(214, 226, 248)) -> None:
+    x, y = xy
+    draw.text((x + 3, y + 4), text, font=fnt, fill=shadow_fill)
+    for dx, dy in [(0, 0), (1, 0), (0, 1), (1, 1), (2, 0)]:
+        draw.text((x + dx, y + dy), text, font=fnt, fill=fill)
+
+
 def round_rect(draw: ImageDraw.ImageDraw, xy, r: int, fill, outline=None, width=1) -> None:
     draw.rounded_rectangle(xy, radius=r, fill=fill, outline=outline, width=width)
 
@@ -194,9 +201,9 @@ def render_popup() -> dict:
     d.polygon([(980, 24), (1474, 24), (1474, 360), (1240, 306)], fill=(228, 240, 255, 160))
     close_button(d, 1394, 50, 56)
 
-    draw_art_text(d, (122, 68), "AI 商品图优化接入", font(78), TEXT, stroke_width=5, shadow_fill=(207, 224, 255))
-    draw_art_text(d, (126, 164), "一个商品多位置素材", font(54), TEXT, stroke_width=3, shadow_fill=(224, 234, 255))
-    draw_art_text(d, (650, 164), "批量生成 5 张主图", font(54), BLUE, stroke_width=3, shadow_fill=(224, 234, 255))
+    draw_heavy_text(d, (122, 68), "AI 商品图优化接入", font(78), TEXT, shadow_fill=(216, 226, 246))
+    draw_heavy_text(d, (126, 164), "一个商品多位置素材", font(54), TEXT, shadow_fill=(226, 234, 250))
+    draw_heavy_text(d, (650, 164), "批量生成 5 张主图", font(54), BLUE, shadow_fill=(226, 234, 250))
 
     slots = []
     d.rounded_rectangle((124, 250, 446, 308), radius=29, fill=(238, 246, 255), outline=(194, 219, 255), width=2)
